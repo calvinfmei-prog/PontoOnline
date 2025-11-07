@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Arduino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #006699;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 1.3em;
+            color: #009688;
+        }
+        .card p {
+            margin: 5px 0;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .specs {
+            font-size: 0.85em;
+            color: #555;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Tipos de Placas Arduino</h1>
+    <div class="container">
+        
+        <!-- Arduino Uno -->
+        <div class="card">
+            <img src="https://store.arduino.cc/cdn/shop/products/ABX00066_01_900x.jpg" alt="Arduino Uno">
+            <div class="card-content">
+                <h2>Arduino Uno</h2>
+                <p>A placa mais popular e ideal para iniciantes. Baseada no ATmega328P.</p>
+                <div class="specs">
+                    <strong>Processador:</strong> 16 MHz<br>
+                    <strong>Pinos digitais:</strong> 14 (6 PWM)<br>
+                    <strong>Pinos analógicos:</strong> 6<br>
+                    <strong>Memória Flash:</strong> 32 KB
+                </div>
+            </div>
+        </div>
 
+        <!-- Arduino Mega -->
+        <div class="card">
+            <img src="https://store.arduino.cc/cdn/shop/products/A000067_01_900x.jpg" alt="Arduino Mega">
+            <div class="card-content">
+                <h2>Arduino Mega 2560</h2>
+                <p>Para projetos complexos com mais pinos e memória.</p>
+                <div class="specs">
+                    <strong>Processador:</strong> 16 MHz<br>
+                    <strong>Pinos digitais:</strong> 54 (15 PWM)<br>
+                    <strong>Pinos analógicos:</strong> 16<br>
+                    <strong>Memória Flash:</strong> 256 KB
+                </div>
+            </div>
+        </div>
+
+        <!-- Arduino Nano -->
+        <div class="card">
+            <img src="https://store.arduino.cc/cdn/shop/products/ABX00028_01_900x.jpg" alt="Arduino Nano">
+            <div class="card-content">
+                <h2>Arduino Nano</h2>
+                <p>Versão compacta do Uno, ideal para projetos embutidos.</p>
+                <div class="specs">
+                    <strong>Processador:</strong> 16 MHz<br>
+                    <strong>Pinos digitais:</strong> 22 (6 PWM)<br>
+                    <strong>Pinos analógicos:</strong> 8<br>
+                    <strong>Tamanho:</strong> 18x45 mm
+                </div>
+            </div>
+        </div>
+
+        <!-- Arduino Leonardo -->
+        <div class="card">
+            <img src="https://store.arduino.cc/cdn/shop/products/A000057_01_900x.jpg" alt="Arduino Leonardo">
+            <div class="card-content">
+                <h2>Arduino Leonardo</h2>
+                <p>Permite emular teclado e mouse via USB.</p>
+                <div class="specs">
+                    <strong>Processador:</strong> 16 MHz<br>
+                    <strong>Pinos digitais:</strong> 20 (7 PWM)<br>
+                    <strong>Pinos analógicos:</strong> 12<br>
+                    <strong>USB nativo:</strong> Sim
+                </div>
+            </div>
+        </div>
+
+        <!-- Arduino Due -->
+        <div class="card">
+            <img src="https://store.arduino.cc/cdn/shop/products/A000062_01_900x.jpg" alt="Arduino Due">
+            <div class="card-content">
+                <h2>Arduino Due</h2>
+                <p>Primeira placa ARM de 32 bits da Arduino.</p>
+                <div class="specs">
+                    <strong>Processador:</strong> 84 MHz (SAM3X8E)<br>
+                    <strong>Pinos digitais:</strong> 54 (12 PWM)<br>
+                    <strong>Pinos analógicos:</strong> 12<br>
+                    <strong>Voltagem:</strong> 3.3V
+                </div>
+            </div>
+        </div>
+
+        <!-- Arduino Micro -->
+        <div class="card">
+            <img src="https://store.arduino.cc/cdn/shop/products/ABX00012_01_900x.jpg" alt="Arduino Micro">
+            <div class="card-content">
+                <h2>Arduino Micro</h2>
+                <p>Muito pequena, com suporte a HID (teclado/mouse).</p>
+                <div class="specs">
+                    <strong>Processador:</strong> 16 MHz<br>
+                    <strong>Pinos digitais:</strong> 20 (7 PWM)<br>
+                    <strong>Pinos analógicos:</strong> 12<br>
+                    <strong>Tamanho:</strong> 18x48 mm
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Imagens oficiais da <a href="https://store.arduino.cc" target="_blank">Arduino Store</a> | Informações técnicas baseadas nas especificações oficiais.</p>
+    </footer>
+</body>
+</html>
